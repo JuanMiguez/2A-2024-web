@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1 id="moskito">HYPERLINKS</h1>
+
+    <!-- ID es un atributo global que me sirve para identificar univocamente una etiqueta-->
+
+<p>documentacion de referancia en el siguiente <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">enlace</a></p>
+
+<h3>Ejemplo basico</h3>
+<p>
+    Crea un enlace a
+    <a href="https://www.mozilla.org/es-ES/">la página de inicio de Mozilla</a>.
+    <!--el atributo Href es obligatorio y sirve para dirigir el navegador al destino-->
+</p>
+
+<h3>Ejemplo de link en un parrafo usando la etiqueta b (bold) </h3>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut similique <b><a href="http://google.com">UN HYPERLINK</a></b>maiores repudiandae, necessitatibus optio tempora qui soluta quos vitae fugit, quae culpa quibusdam, at eligendi ullam facere dolores explicabo?</p>
+
+<h3>Ejemplo usando el atributo title</h3>
+
+<p>
+    Crea un enlace a
+    <a
+      href="https://www.mozilla.org/es-ES/"
+      title="El mejor lugar para encontrar más información acerca de la misión de Mozilla y cómo contribuir"
+      >la página de inicio de Mozilla</a
+    >.
+  </p>
+<!--Usando el el atributo title podemos agregarle una "ayuda" al poner el mouse por encima del enlace. ¡cuidado con su uso en pantallas moviles (tactiles)-->
+  
+<h3>Usando Links en otras etiquetas</h3>
+
+<!--usando una imagen como link-->
+<a href="https://www.hdwallpaper.nu/dragon-ball-z-wallpapers/" target="_blank"><img src="https://www.hdwallpaper.nu/wp-content/uploads/2015/06/Dragon-Ball-Z-Wallpapers-HD-1024x603.jpg" alt=""></a>
+ 
+<!--Si uso el atribbuto target. puedo definir el comportamiento del link. por ejmplo si uso target="_blank" me abrira el linnk en una nueva pestaña-->
+
+<!--Usando un parrafo como link-->
+<a href="https://es.lipsum.com/"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus optio! In officiis a ullam, reiciendis placeat rerum quis? Ratione ipsa voluptate aliquam nobis? In velit maiores sapiente exercitationem magnam?</p></a>
+
+<hr>
+
+<h3>url relativas</h3>
+
+<a href="00-estructuraBasica.html" target="_blank">estructura basica url relativa</a>
+
+<h3>URL Absoluta</h3>
+
+<a href="http://127.0.0.1:5500/01-textoHtml.html" target="_blank"> texto html url absoluta</a>
+
+<h3>URL ancla o ANCHOR</h3>
+
+<a href="#moskito">vinculo ancla</a>
+
+
+<h3>bajando por directorios del servidor web (o subiendo)</h3>
+
+<a href="img/henkidama.jpg">imagen de la henkidama</a>
+
+
+</body>
+</html>
