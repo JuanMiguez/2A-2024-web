@@ -1,0 +1,126 @@
+
+<!--Trabajo Práctico: Tablas y Formularios HTML
+Objetivo:
+
+El objetivo de este trabajo práctico es que los estudiantes aprendan a utilizar tablas y formularios HTML para crear contenido estructurado e interactivo en páginas web.
+
+Recursos:
+
+HTML: Tablas: https://developer.mozilla.org/es/docs/Learn/HTML/Tables
+HTML: Formularios: https://developer.mozilla.org/es/docs/Web/HTML/Element/form
+Tarea:
+
+Crear una tabla:
+
+Crear una tabla HTML que represente el menú de un restaurante. La tabla debe tener las siguientes columnas:
+Nombre del plato: Nombre del plato principal.
+Descripción: Breve descripción del plato.
+Precio: Precio del plato en pesos argentinos.
+Agregar al menos 5 filas de datos a la tabla.
+Dar formato a la tabla utilizando etiquetas como <thead>, <tbody> y <tfoot> para mejorar la legibilidad.
+Crear un formulario:
+
+Crear un formulario HTML que permita a los usuarios realizar una reserva en el restaurante. El formulario debe tener los siguientes campos:
+Nombre: Nombre completo del cliente.
+Teléfono: Número de teléfono del cliente.
+Cantidad de personas: Cantidad de personas para la reserva.
+Fecha: Fecha deseada para la reserva.
+Hora: Hora deseada para la reserva.
+Comentarios: Comentarios adicionales del cliente (opcional).
+Agregar etiquetas de validación básicas a los campos del formulario para evitar errores de entrada de datos.
+Incluir un botón de envío para enviar el formulario.
+Requisitos:
+
+El código HTML debe estar bien organizado y con comentarios explicativos.
+La tabla debe tener un diseño claro y fácil de leer.
+El formulario debe ser funcional y permitir a los usuarios ingresar datos correctamente.
+El código no debe incluir CSS ni JavaScript.
+Entrega:
+
+Los estudiantes deben entregar el código HTML de la tabla y el formulario.
+
+Evaluación:
+
+El trabajo práctico será evaluado en base a los siguientes criterios:
+
+Correcta utilización de etiquetas HTML para crear tablas y formularios.
+Estructura y organización del código HTML.
+Diseño y legibilidad de la tabla.
+Funcionalidad del formulario.
+Claridad y calidad de los comentarios.
+Ejemplo de código: -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante "El Buen Sabor"</title>
+</head>
+<body>
+    <h1>Menú del Restaurante "El Buen Sabor"</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del plato</th>
+                <th>Descripción</th>
+                <th>Precio (ARS)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Milanesa Napolitana</td>
+                <td>Milanesa de carne con salsa de tomate, queso mozzarella y jamón cocido.</td>
+                <td>$750</td>
+            </tr>
+            <tr>
+                <td>Locro</td>
+                <td>Guiso tradicional argentino con maíz, porotos, carne, chorizo y verduras.</td>
+                <td>$600</td>
+            </tr>
+            <tr>
+                <td>Empanadas</td>
+                <td>Empanadas de carne, queso, jamón y queso o verdura.</td>
+                <td>$300 (por unidad)</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Variedad de pizzas con diferentes ingredientes.</td>
+                <td>$800 - $1200</td>
+            </tr>
+            <tr>
+                <td>Ensalada César</td>
+                <td>Ensalada de lechuga, pollo a la plancha, crutones, queso parmesano y salsa César.</td>
+                <td>$550</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulario de Reserva</h2>
+
+    <form action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="personas">Cantidad de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+<br>
+        <label for="comentarios">Comentarios (opcional):</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+</body>
+</html>
+
