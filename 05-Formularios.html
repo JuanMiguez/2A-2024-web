@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios web</title>
+</head>
+<body>
+
+    <form action="mailto:" method="post"> 
+        <!--El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.-->
+        <!--El método HTTP que el navegador usa para enviar el formulario. Valores posibles son:
+
+        post: Corresponde al método POST HTTP ; los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.
+        get: Corresponde al método GET HTTP; los datos del formulario son adjuntados a la URI del atributo action , con un '?' como separador, y la URI resultante es enviada al servidor. Use este método cuando el formulario no tiene efectos secundarios y contiene solo caracteres ASCII.-->
+
+        <label for="">desayuno?</label>
+        <!--El Elemento HTML <label> representa una etiqueta para un elemento en una interfaz de usuario. Este puede estar asociado con un control ya sea mediante la utilizacion del atributo for, o ubicando el control dentro del elemento label. Tal control es llamado "el control etiquetado" del elemento label.-->
+        <br>
+
+        <label for="">panceta 🥓</label>
+        <input type="checkbox" name="breakfast" value="bacon">
+        <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control, que dependen del dispositivo y el agente de usuario (user agent (en-US)).El elemento <input> es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de combinaciones de tipos y atributos de entrada.-->
+        <br>
+
+        <label for="">huevos 🍳</label>
+        <input type="checkbox" name="breakfast" value="eggs">
+        <br>
+
+        <label for="">Pancakes 🥞</label>
+        <input type="checkbox" name="breakfast" value="pancakes">
+        <br>
+    <fieldset>
+        <legend>tipo de entrega</legend>
+        <!--El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.
+        Sus etiquetas son: <fieldset> y </fieldset> (ambas obligatorias).
+
+        Crea una caja: en bloque.
+
+        Está definido como: Elemento en bloque.
+
+        Puede contener: un elemento legend (opcional), y despues cero o más elementos en bloque o en linea-->
+        
+        <label for="">retira</label>
+        <input name="delivery" type="radio" value="pickup" />
+        <br>
+        <label for="">envio</label>
+        <input name="delivery" type="radio" value="delivery" />
+    </fieldset>
+        <fieldset>
+            <legend>Título</legend>
+            <!--El elemento <legend> (leyenda) crea un título para un grupos los campos (<fieldset>) de un formulario.
+            Sus etiquetas son: <legend> y </legend> (ambas obligatorias).El elemento <legend> (leyenda) crea un título para un grupos los campos (<fieldset>) de un formulario.
+            Sus etiquetas son: <legend> y </legend> (ambas obligatorias).-->
+            <input type="radio" name="radio" id="radio" />
+            <label for="radio">Clic aquí</label>
+        </fieldset>
+        <input type="submit" value="mandalo pa" />
+    </form>
+
+    <form action="/action.php" method="post">Name: <input name="name" type="text" /> <br /> Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br /><select name="gender">
+        <option selected="selected" value="male">Male</option>
+        <option value="female">Female</option>
+        </select><br /> <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br /> <textarea cols="20" name="comments" rows="5">Comment</textarea><br /> <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br /> <input type="submit" value="Submit" /></form>
+
+
+
+</body>
+</html>
