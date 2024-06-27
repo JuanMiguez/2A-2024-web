@@ -1,0 +1,63 @@
+/* Estilo para los elementos de párrafo (<p>) */
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece la familia de fuentes para los párrafos */
+}
+
+/* Estilo para los encabezados de primer nivel (<h1>) */
+h1 {
+  color: red; /* Cambia el color del texto de los encabezados h1 a rojo */
+}
+
+/* Estilo compartido para los elementos de párrafo (<p>) y lista (<li>) */
+p, li {
+  color: green; /* Cambia el color del texto de los párrafos y elementos de lista a verde */
+}
+
+/* Estilo específico para los elementos de lista (<li>) */
+li {
+  list-style-type: none; /* Elimina el estilo de viñetas de los elementos de lista */
+}
+
+/* Clase "mango" aplicable a cualquier elemento */
+.mango {
+  color: orange; /* Cambia el color del texto a naranja */
+  font-weight: bold; /* Hace que el texto sea en negrita */
+}
+
+/* Estilo para los elementos <em> dentro de elementos de lista (<li>) */
+li em {
+  color: rebeccapurple; /* Cambia el color del texto a púrpura */
+}
+
+/* Estilo para el primer párrafo (<p>) inmediatamente después de un encabezado (<h1>) */
+h1 + p {
+  font-size: 200%; /* Duplica el tamaño de la fuente del párrafo */
+}
+
+/* Estilo para enlaces no visitados (<a:link>) */
+a:link {
+  color: pink; /* Cambia el color de los enlaces no visitados a rosa */
+}
+
+/* Estilo para enlaces visitados (<a:visited>) */
+a:visited {
+  color: green; /* Cambia el color de los enlaces visitados a verde */
+}
+
+/* Estilo para enlaces al pasar el ratón por encima (<a:hover>) */
+a:hover {
+  text-decoration: none; /* Elimina la subrayado de los enlaces al pasar el ratón por encima */
+}
+
+/* Estilo específico para elementos con clase "mango" dentro del primer párrafo (<p>) 
+ inmediatamente después de un encabezado (<h1>) */
+body h1 + p .mango {
+  color: yellow; /* Cambia el color del texto a amarillo */
+  background-color: black; /* Cambia el color de fondo a negro */
+  padding: 5px; /* Añade un relleno de 5 píxeles alrededor del texto */
+}
+
+  
+  
+  
+  

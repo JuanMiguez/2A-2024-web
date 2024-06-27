@@ -1,0 +1,26 @@
+/*sintaxis CSS*/
+
+p{
+    color:pink;
+    font-size: 16px;
+  }
+
+
+/* esto es un comentario css */  
+/*donde:
+- p es el selector, indica que elementos van a ser afectados
+- las llaves encierran todas las propiedades que va a afectar al selector
+- color y font-size son las propiedades del elemento que va a ser afectada.
+- red y 16px son los valores de las propiedades
+
+
+*/
+
+/*
+hay varias formas de aplicar css a un documento html.
+
+- inline: se aplica dentro del documento html usando el atributo style en la etiqueta. <p style="color:red; font-size:16px;"> esto es un texto color rojo </p>
+- en head puedo agregar una etiqqueta <style> y usar selectores y propiedades como vimos en este ejemplo
+- enlazando un documento css al html: en head hay que vincular el archivo css
+
+*/

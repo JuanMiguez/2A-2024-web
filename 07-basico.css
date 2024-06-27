@@ -1,0 +1,66 @@
+/*selector etiqueta html: selecciona todas la etiquetas h1 del documento html*/
+h1{
+    color: #7D9F35;
+}
+/*Selector multiple: usando "," podemos incluir multiples etiquetas*/
+p,li{
+    color: #A8383B;
+}
+
+li{
+    list-style-type:square;
+}
+/*Selector de clase: usando "." seguido del valor del atributo class en el documento html podemos seleccionar a todas las etiquetas que tengan el mismo valor, en este ejemplo todas las etiquetas que tengan el valor "moskito" en el atributo class */
+
+.moskito {
+    color: orange;
+    font-weight: bold;
+  }
+
+/*«determina cualquier elemento li que tenga una clase moskito». */  
+li.moskito {
+    color: orange;
+    font-weight: bold;
+  }
+  
+
+/*Selector segun ubicacion en el doc: Este selector separará cualquier elemento <em> que esté dentro de (un descendiente de) <li>.*/
+li em {
+    color: rebeccapurple;
+  }
+/*dar formato un párrafo que venga directamente a continuación de un título que esté en el mismo nivel de jerarquía en el HTML*/
+  h1 + p {
+    font-size: 200%;
+  }
+
+  /*Dar formato según el estado:  dar formato a los elementos en función de su estado. Un ejemplo sencillo es el estilo de los enlaces. Cuando damos formato a un enlace, necesitamos seleccionar el elemento <a> (anclaje). Tiene diferentes estados dependiendo de si se ha visitado o no, se pasa por encima, o se presiona con el teclado o se hace clic (se activa).*/
+  a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: green;
+  }
+/*usando la pseudoclase "hover" puedo cambiar el aspecto cuando el mouse sta sobre el */
+  a:hover {
+    color:black;
+    text-decoration: none;
+  }
+/*usando ID, usando "#" podemos aplicar a la etiqueta que tenga el valor del atributo ID en este caso prueba. recordar que solo puede haber un ID con un determinado valor en el documento html*/
+  #prueba{
+    background-color: antiquewhite;
+    position: static;
+    left:200px;
+    top:200px;
+
+    
+  }
+  /*Combinaciones de selectores y combinadores*/
+
+  /* selecciona cualquier elemento <span> que se encuentre dentro de un <p>, que esté dentro de un <artículo> */
+artículo p span { ... }
+
+/* selecciona cualquier <p> que se encuentre directamente después de <ul>, que va directamente después de <h1> */
+h1 + ul + p { ... }
+
+
