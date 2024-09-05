@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Práctica: CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actividad Práctica: CSS Box Model</h1>
+
+    <h2>Objetivo</h2>
+    <p>Aplicar y experimentar con los conceptos del CSS Box Model (content, padding, border, margin) en un archivo HTML proporcionado.</p>
+
+    <h2>Ejercicio 1: Modificación Individual</h2>
+    <h3>Instrucciones:</h3>
+    <ol>
+        <li>
+            <strong>Descargar y preparar el archivo HTML:</strong>
+            <p>Descarga y guarda el siguiente archivo HTML como <code>index.html</code>:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ejercicio CSS Box Model&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="box"&gt;
+        &lt;p&gt;Este es un párrafo dentro de un div con clase "box".&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </li>
+        <li>
+            <strong>Crear el archivo CSS:</strong>
+            <p>Crea un archivo CSS llamado <code>styles.css</code> con el siguiente contenido inicial:</p>
+            <pre><code>/* Estilo inicial */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 300px;
+    background-color: #f0f0f0;
+}</code></pre>
+        </li>
+        <li>
+            <strong>Modificar el archivo CSS:</strong>
+            <p>Realiza las siguientes modificaciones en el archivo <code>styles.css</code>:</p>
+
+            <h4>Paso 1: Agregar padding a la clase .box</h4>
+            <pre><code>.box {
+    padding: 20px;
+}</code></pre>
+
+            <h4>Paso 2: Agregar borde a la clase .box</h4>
+            <pre><code>.box {
+    border: 5px solid #333;
+}</code></pre>
+
+            <h4>Paso 3: Agregar margen a la clase .box</h4>
+            <pre><code>.box {
+    margin: 30px;
+}</code></pre>
+
+            <h4>Paso 4: Modificar tamaño y color del contenido en la clase .box p</h4>
+            <pre><code>.box p {
+    font-size: 16px;
+    color: #333;
+}</code></pre>
+
+            <h4>Paso 5: Aplicar todas las propiedades a la clase .box y .box p</h4>
+            <pre><code>.box {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 30px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #333;
+}</code></pre>
+        </li>
+    </ol>
+
+    <h2>Ejercicio 2: Trabajo en Grupo</h2>
+    <h3>Instrucciones:</h3>
+    <ol>
+        <li>
+            <strong>Descargar y preparar el archivo HTML:</strong>
+            <p>Descarga y guarda el siguiente archivo HTML como <code>index-group.html</code>:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ejercicio en Grupo - CSS Box Model&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles-group.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Título del Sitio&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;div class="content"&gt;
+            &lt;p&gt;Contenido principal del sitio web.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;aside class="sidebar"&gt;
+            &lt;p&gt;Barra lateral con información adicional.&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Pie de página&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </li>
+        <li>
+            <strong>Crear el archivo CSS:</strong>
+            <p>Crea un archivo CSS llamado <code>styles-group.css</code> con el siguiente contenido inicial:</p>
+            <pre><code>/* Estilo inicial */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #efefef;
+    padding: 10px;
+}</code></pre>
+        </li>
+        <li>
+            <strong>Modificar el archivo CSS:</strong>
+            <p>Trabaja en grupo para resolver los siguientes problemas de diseño:</p>
+            <ul>
+                <li><strong>Problema 1: Espaciar correctamente el contenido</strong>
+                    <p>Ajusta los márgenes de <code>.content</code> y <code>.sidebar</code> para que haya un espacio de 20px entre ellos.</p>
+                </li>
+                <li><strong>Problema 2: Mejorar la legibilidad del texto</strong>
+                    <p>Añade padding a los elementos de texto dentro de <code>.content</code> y <code>.sidebar</code>.</p>
+                </li>
+                <li><strong>Problema 3: Crear un borde decorativo para el contenido principal</strong>
+                    <p>Añade un borde de 3px, color #ccc y estilo dashed a <code>.content</code>.</p>
+                </li>
+                <li><strong>Problema 4: Alinear el contenido del pie de página</strong>
+                    <p>Añade padding y margen para centrar el texto dentro de <code>footer</code>.</p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Reflexión y Discusión</h2>
+    <p>Al finalizar los ejercicios, presenta tus soluciones y reflexiona sobre los desafíos encontrados. La discusión debe centrarse en cómo el Box Model afecta el diseño y la funcionalidad de una página web y en cómo se pueden resolver los problemas de diseño de manera colaborativa.</p>
+
+    <h2>Cierre y Asignación de Tareas</h2>
+    <p><strong>Resumen de la clase:</strong> Resaltar los conceptos aprendidos y su aplicación práctica.</p>
+    <p><strong>Tarea:</strong> Diseñar una página web simple que utilice de manera efectiva el Box Model de CSS, aplicando padding, border y margin a distintos elementos.</p>
+
+    <p>Estos ejercicios te ayudarán a comprender el CSS Box Model y promoverán el trabajo colaborativo y el desarrollo del pensamiento crítico.</p>
+</body>
+</html>
