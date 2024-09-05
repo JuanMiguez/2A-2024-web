@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 7 Box model y estiquetas semanticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TP7- Box Model y Etiquetas Semánticas</h1>
+
+        <h2>Objetivos del Trabajo Práctico</h2>
+        <ul>
+            <li>Comprender el funcionamiento del modelo de caja (Box Model) en CSS.</li>
+            <li>Identificar y utilizar correctamente las etiquetas semánticas en HTML5.</li>
+            <li>Desarrollar una página web aplicando los conocimientos adquiridos sobre el Box Model y las etiquetas semánticas.</li>
+        </ul>
+
+        <h2>Instrucciones</h2>
+        <h3>Estructura del Documento</h3>
+        <p>Crear un documento HTML5 que incluya las siguientes secciones usando etiquetas semánticas:</p>
+        <ul>
+            <li><strong>Header:</strong> Con un título principal y una barra de navegación.</li>
+            <li><strong>Main:</strong> Contendrá varios artículos dentro de secciones.</li>
+            <li><strong>Aside:</strong> Para información adicional o enlaces relacionados.</li>
+            <li><strong>Footer:</strong> Con información de contacto y enlaces a redes sociales.</li>
+        </ul>
+
+        <h3>Aplicación del Box Model</h3>
+        <p>Crear un archivo CSS externo donde se apliquen estilos usando el Box Model. Incluir ejemplos de cómo se utiliza <code>padding</code>, <code>margin</code>, y <code>border</code>.</p>
+        
+
+        <h3>Integración y Validación</h3>
+        <p>Integrar el CSS al HTML vinculando el archivo CSS al documento HTML.</p>
+        
+
+        <h2>Configuración del Proyecto</h2>
+        <p>Crear una carpeta para el proyecto. Dentro de esta carpeta, crear dos archivos: <code>index.html</code> y <code>styles.css</code>.</p>
+
+        <h3>Contenido del Archivo <code>index.html</code></h3>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Trabajo Práctico - Interfaz Gráfica Web&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Mi Página Web&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Artículo 1&lt;/h2&gt;
+                &lt;p&gt;Contenido del artículo 1...&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Artículo 2&lt;/h2&gt;
+                &lt;p&gt;Contenido del artículo 2...&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;
+        &lt;h2&gt;Información Adicional&lt;/h2&gt;
+        &lt;p&gt;Enlaces relacionados...&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Contacto: email@example.com&lt;/p&gt;
+        &lt;p&gt;Redes Sociales: Facebook, Twitter, Instagram&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>Contenido del Archivo <code>styles.css</code></h3>
+        <pre><code>* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    width: 60%;
+    float: left;
+    margin-right: 2%;
+}
+
+aside {
+    width: 35%;
+    float: left;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #f8f8f8;
+}</code></pre>
+
+        <h2>Evaluación</h2>
+        <ul>
+            <li>Correcta implementación del Box Model en el diseño.</li>
+            <li>Uso adecuado de etiquetas semánticas.</li>
+            <li>Validez del código HTML y CSS.</li>
+            <li>Responsividad de la página web.</li>
+            <li>Presentación clara y ordenada del código.</li>
+        </ul>
+
+        <h2>Reflexión Final</h2>
+        <p>Al finalizar el trabajo práctico, redactar un breve informe donde se reflejen los aprendizajes obtenidos, las dificultades encontradas y cómo se resolvieron, y la importancia del Box Model y las etiquetas semánticas en el desarrollo web.</p>
+    </div>
+</body>
+</html>
