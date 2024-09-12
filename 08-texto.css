@@ -1,0 +1,18 @@
+/* Archivo: styles.css */
+@font-face {
+    font-family: 'falloutfont';
+    src: url('../fonts/Overseer.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+    font-size: 1em;
+    font-family: "Heebo", sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: falloutfont, Heebo, sans-serif;
+}
