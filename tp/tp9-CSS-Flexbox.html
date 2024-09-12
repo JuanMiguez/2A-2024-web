@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico: CSS Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .exercise {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .exercise-header {
+            font-weight: bold;
+        }
+        .flex-container {
+            display: flex;
+            border: 1px solid #000;
+            justify-content:flex-start;
+            align-items:flex-start;
+            padding: 10px;
+        }
+        .flex-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabajo Práctico: CSS Flexbox</h1>
+    <p>Este trabajo práctico tiene como objetivo aplicar los conocimientos sobre CSS Flexbox. A continuación se presentan algunos ejercicios que deben ser completados utilizando las propiedades de Flexbox. Antes de comenzar, revisa la teoría en los siguientes enlaces:</p>
+    <ul>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox (CSS Tricks)</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Flexbox en MDN</a></li>
+    </ul>
+    <div class="container">
+        <div class="exercise">
+            <div class="exercise-header">Ejercicio 1: Distribución de elementos</div>
+            <p>En este ejercicio, debes distribuir los elementos de manera equitativa dentro del contenedor. Utiliza las propiedades <code>justify-content</code> y <code>align-items</code>.</p>
+            <div class="flex-container" style="height: 200px;">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+            <p><strong>Objetivo:</strong> Centrar los elementos tanto horizontal como verticalmente dentro del contenedor.</p>
+        </div>
+        <div class="exercise">
+            <div class="exercise-header">Ejercicio 2: Flexibilidad de los elementos</div>
+            <p>En este ejercicio, algunos elementos deben ser más flexibles que otros. Utiliza la propiedad <code>flex</code> para ajustar la flexibilidad.</p>
+            <div class="flex-container">
+                <div class="flex-item" style="flex: 1;">Item 1</div>
+                <div class="flex-item" style="flex: 1;">Item 2</div>
+                <div class="flex-item" style="flex: 1;">Item 3</div>
+            </div>
+            <p><strong>Objetivo:</strong> El segundo elemento debe ocupar el doble de espacio que los otros dos elementos.</p>
+        </div>
+        <div class="exercise">
+            <div class="exercise-header">Ejercicio 3: Orden de los elementos</div>
+            <p>En este ejercicio, debes cambiar el orden en que los elementos aparecen visualmente usando la propiedad <code>order</code>.</p>
+            <div class="flex-container">
+                <div class="flex-item" style="order: 1;">Item 1</div>
+                <div class="flex-item" style="order: 1;">Item 2</div>
+                <div class="flex-item" style="order: 1;">Item 3</div>
+            </div>
+            <p><strong>Objetivo:</strong> Los elementos deben aparecer en el siguiente orden: Item 2, Item 3, Item 1.</p>
+        </div>
+    </div>
+</body>
+</html>
+
