@@ -1,0 +1,9 @@
+el tp final consiste en realizar un sitio web completo. debe contener al menos lo siguiente:
+- 2 paginas completas.
+- cada página debe utilizar etiquetas semánticas para organizar el contenido (al menos un <header> dos <section> un <footer> y algunos <articles> y <div>) y usar box model para darle formato al contenido
+- un css que sirva para ambas paginas
+- usar algún sistema para organizar el contenido en la página (flexbox , grid o ambas)
+- las páginas deben   tener contenido multimedia (videos, feeds de redes, fotos, etc) y texto 
+- al menos debe haber un formulario de contacto
+
+la tematica es libre.
